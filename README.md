@@ -91,41 +91,39 @@ Store-Management/
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Quick Start
 
-- **Node.js** 18+ and **npm** (or yarn, pnpm, bun)
-
-### Installation
+1. **Install dependencies**
 
 ```bash
-# Clone the repository
-git clone <your-repo-url>
-cd Store-Management
-
-# Install dependencies
 npm install
-
-# Set up environment variable
-echo "DATABASE_URL=\"postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=public\"" > .env
-
-# Push the Prisma schema & generate client
-npx prisma generate
 ```
 
-### Run the Development Server
+2. **Set up your database** — choose one of:
+
+| Option | Setup |
+|--------|-------|
+| **Prisma Postgres** (free) | [console.prisma.io](https://console.prisma.io) — create a DB, copy connection string |
+| **Neon** (free) | [neon.tech](https://neon.tech) — create a project, copy connection string |
+| **Supabase** (free) | [supabase.com](https://supabase.com) — create a project, copy connection string |
+| **Local PostgreSQL** | Install locally, create a database, use `postgresql://user:pass@localhost:5432/db?schema=public` |
+
+3. **Set `DATABASE_URL`** in `.env`, then:
 
 ```bash
+npx prisma generate
+npx prisma db push
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
+Open [http://localhost:3000](http://localhost:3000). Unauthenticated users are redirected to `/login`. First user to register becomes the **Owner**.
 
 ### Available Scripts
 
 | Command | Description |
 |---------|-------------|
 | `npm run dev` | Start development server |
-| `npm run build` | Build for production |
+| `npm run build` | Push schema & build for production |
 | `npm run start` | Start production server |
 | `npm run lint` | Run ESLint |
 
