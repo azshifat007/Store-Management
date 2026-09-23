@@ -222,6 +222,16 @@ The schema is automatically pushed before each build:
 npm run build
 ```
 
+### Mobile
+
+The app is mobile-optimized with a responsive bottom pill navigation bar on phones. The sidebar is hidden on mobile and replaced with a fixed bottom nav.
+
+### Performance
+
+- Dashboard includes a skeleton loading state for fast perceived load times
+- All dashboard pages have route-level loading UIs
+- Sidebar hidden on mobile for more content space
+
 ---
 
 <p align="center">
