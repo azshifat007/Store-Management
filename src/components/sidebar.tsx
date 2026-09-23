@@ -32,7 +32,7 @@ export default function Sidebar({
   const items = navItems.filter((item) => !item.roles || item.roles.includes(role));
 
   return (
-    <aside className="flex w-full flex-col border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900 md:h-screen md:w-60 md:shrink-0 md:border-b-0 md:border-r">
+    <aside className="hidden w-full flex-col border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900 md:flex md:h-screen md:w-60 md:shrink-0 md:border-b-0 md:border-r">
       <div className="flex items-center gap-3 border-b border-zinc-200 px-5 py-4 dark:border-zinc-800">
         <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-600 text-sm font-bold text-white">
           {storeName.charAt(0).toUpperCase()}
