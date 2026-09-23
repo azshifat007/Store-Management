@@ -4,6 +4,7 @@ import { createProduct } from "@/lib/actions/catalog";
 import { Card, PageHeader } from "@/components/ui";
 import { ProductForm } from "@/components/product-form";
 
+export const dynamic = "force-dynamic";
 export const metadata = { title: "New product" };
 
 export default async function NewProductPage() {

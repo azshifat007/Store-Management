@@ -5,6 +5,8 @@ import { updateSupplier } from "@/lib/actions/ledger";
 import { Card, PageHeader } from "@/components/ui";
 import { SupplierForm } from "@/components/party-form";
 
+export const dynamic = "force-dynamic";
+
 export default async function EditSupplierPage({
   params,
 }: {

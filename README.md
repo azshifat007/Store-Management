@@ -216,6 +216,14 @@ npx prisma db push
 npm run dev
 ```
 
+### Build for Production
+
+The schema is automatically pushed before each build:
+
+```bash
+npm run build
+```
+
 ---
 
 <p align="center">

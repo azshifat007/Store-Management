@@ -5,6 +5,8 @@ import { updateCategory } from "@/lib/actions/catalog";
 import { Card, PageHeader } from "@/components/ui";
 import { CategoryForm } from "@/components/category-form";
 
+export const dynamic = "force-dynamic";
+
 export default async function EditCategoryPage({
   params,
 }: {

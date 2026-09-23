@@ -3,6 +3,8 @@ import { prisma } from "@/lib/prisma";
 import { LoginForm } from "@/components/auth-form";
 import AuthShell from "../shell";
 
+export const dynamic = "force-dynamic";
+
 export default async function LoginPage() {
   const userCount = await prisma.user.count();
   const showRegister = userCount === 0 && !(await prisma.session.count());

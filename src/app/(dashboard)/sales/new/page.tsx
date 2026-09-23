@@ -4,6 +4,7 @@ import { createSale } from "@/lib/actions/sales";
 import { Card, PageHeader } from "@/components/ui";
 import { PosForm } from "@/components/pos-form";
 
+export const dynamic = "force-dynamic";
 export const metadata = { title: "New sale" };
 
 export default async function NewSalePage() {
